@@ -1,0 +1,19 @@
+PRESSEL - claudiamendes.site
+
+SUBIR NO GITHUB PAGES
+  1) Crie um repositório novo (público) e envie todos os arquivos desta pasta (inclusive .nojekyll e CNAME).
+  2) Settings > Pages > Deploy from a branch > main / (root). Em "Custom domain" use claudiamendes.site e marque "Enforce HTTPS".
+  3) No DNS do domínio .site (registros do GitHub Pages):
+       A     @    185.199.108.153
+       A     @    185.199.109.153
+       A     @    185.199.110.153
+       A     @    185.199.111.153
+       CNAME www  SEUUSUARIO.github.io
+  4) Espere o certificado HTTPS (alguns minutos).
+
+TESTE (depois de subir)
+  https://claudiamendes.site/?gclid=TESTE&campaign_id=1&adgroup_id=1&creative_id=1
+  Clique no botão: o WhatsApp abre com "ref:xxxxxxxx" no fim; o painel (track.nexustracker.online) mostra 1 visita e 1 clique.
+  Se for usar várias contas do Google Ads, acrescente &acct=ID_DA_CONTA no link do anúncio.
+
+NÃO REMOVA o <script> do tracker no fim do index.html. O tracker aceita qualquer domínio (CORS *), não precisa mexer na VPS.
